@@ -18,6 +18,7 @@
 
 <body>
     <main class="main min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
+        <!-- Home -->
         <section class="home  text-white flex flex-col justify-center min-h-screen hidden">
             <div class="flex flex-col items-center justify-center gap-10">
                 <h1 class="text-8xl font-normal font-anton">ALPHABET CLASH</h1>
@@ -26,58 +27,78 @@
             </div>
         </section>
         <!-- PlayGround Start  -->
-        <section class="play-ground">
-             <!-- screen  -->
-              <div class="">
-                <div class="artboard artboard-horizontal phone-6 border-[20px] border-[#010313CC] rounded-xl bg-[#FFFFFFB3]">
-                    <p class="bg-[#010313CC] inline ">Don't watch keyboard  while playing...</p>
+        <section class="play-ground hidden">
+            <div class="flex flex-col gap-20">
+                <!-- screen  -->
+                <div class="flex  justify-center mt-28">
+                    <div
+                        class="artboard  artboard-horizontal phone-6 border-[20px] border-[#010313CC] rounded-xl bg-[#FFFFFFB3]">
+                        <div class="flex justify-center">
+                            <p class="bg-[#010313CC] px-4 pb-3 rounded-b-xl">Don't watch keyboard while playing...</p>
+                        </div>
+                        <div class="flex justify-center items-center h-full">
+                            <p class="text-black text-9xl font-poppins font-semibold justify-center pb-10">Y</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <!-- keyboard -->
-              <div class="my-1 flex w-full justify-center gap-1">
-                <kbd class="kbd">q</kbd>
-                <kbd class="kbd">w</kbd>
-                <kbd class="kbd">e</kbd>
-                <kbd class="kbd">r</kbd>
-                <kbd class="kbd">t</kbd>
-                <kbd class="kbd">y</kbd>
-                <kbd class="kbd">u</kbd>
-                <kbd class="kbd">i</kbd>
-                <kbd class="kbd">o</kbd>
-                <kbd class="kbd">p</kbd>
-              </div>
-              <div class="my-1 flex w-full justify-center gap-1">
-                <kbd class="kbd">a</kbd>
-                <kbd class="kbd">s</kbd>
-                <kbd class="kbd">d</kbd>
-                <kbd class="kbd">f</kbd>
-                <kbd class="kbd">g</kbd>
-                <kbd class="kbd">h</kbd>
-                <kbd class="kbd">j</kbd>
-                <kbd class="kbd">k</kbd>
-                <kbd class="kbd">l</kbd>
-              </div>
-              <div class="my-1 flex w-full justify-center gap-1">
-                <kbd class="kbd">z</kbd>
-                <kbd class="kbd">x</kbd>
-                <kbd class="kbd">c</kbd>
-                <kbd class="kbd">v</kbd>
-                <kbd class="kbd">b</kbd>
-                <kbd class="kbd">n</kbd>
-                <kbd class="kbd">m</kbd>
-                <kbd class="kbd">/</kbd>
-              </div>
-               <div>
-
-               </div>
-               <!-- life score -->
+                <!-- keyboard -->
                 <div>
-
+                    <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd class="kbd text-2xl">q</kbd>
+                        <kbd class="kbd text-2xl">w</kbd>
+                        <kbd class="kbd text-2xl">e</kbd>
+                        <kbd class="kbd text-2xl">r</kbd>
+                        <kbd class="kbd text-2xl">t</kbd>
+                        <kbd class="kbd text-2xl">y</kbd>
+                        <kbd class="kbd text-2xl">u</kbd>
+                        <kbd class="kbd text-2xl">i</kbd>
+                        <kbd class="kbd text-2xl">o</kbd>
+                        <kbd class="kbd text-2xl">p</kbd>
+                    </div>
+                    <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd class="kbd text-2xl">a</kbd>
+                        <kbd class="kbd text-2xl">s</kbd>
+                        <kbd class="kbd text-2xl">d</kbd>
+                        <kbd class="kbd text-2xl">f</kbd>
+                        <kbd class="kbd text-2xl">g</kbd>
+                        <kbd class="kbd text-2xl">h</kbd>
+                        <kbd class="kbd text-2xl">j</kbd>
+                        <kbd class="kbd text-2xl">k</kbd>
+                        <kbd class="kbd text-2xl">l</kbd>
+                    </div>
+                    <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd class="kbd text-2xl">z</kbd>
+                        <kbd class="kbd text-2xl">x</kbd>
+                        <kbd class="kbd text-2xl">c</kbd>
+                        <kbd class="kbd text-2xl">v</kbd>
+                        <kbd class="kbd text-2xl">b</kbd>
+                        <kbd class="kbd text-2xl">n</kbd>
+                        <kbd class="kbd text-2xl">m</kbd>
+                        <kbd class="kbd text-2xl">/</kbd>
+                    </div>
                 </div>
+                <!-- life score -->
+                <div class="flex justify-evenly gap-24">
+                    <button class="btn rounded-full bg-[#894189] text-white text-lg flex items-center px-5">
+                        Life
+                        <img src="./images/life.svg" alt="">
+                        <span>1</span>
+                    </button>
+                    <button class="btn rounded-full bg-[#360490] text-white text-lg flex items-center px-5 pl-3">
+                        Score
+                        <img src="./images/score.svg" alt="">
+                        <span>1</span>
+                    </button>
+                </div>
+            </div>
         </section>
         <!-- PlayGround End -->
-        <section class="score">
-
+        <section class="score flex justify-center items-center min-h-screen ">
+            <div class="p-8 text-center space-y-5 text-white rounded-3xl bg-purple-700">
+                <h2 class="text-5xl"><span class="font-semibold">Score :</span> <span>12</span></h2>
+                <button class="btn btn-outline text-xl px-4 text-white font-medium">Play Again</button>
+                <p class="text-xl">Practice will make you Pro</p>
+            </div>
         </section>
     </main>
 </body>

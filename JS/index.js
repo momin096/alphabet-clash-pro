@@ -2,6 +2,11 @@
 function continueGame(){
 //  1. Generate a random Alphabet
     const alphabet = getARandomAlphabet();
+
+    const currentAlphabetElement = document.getElementById('current-alphabet');
+    currentAlphabetElement.innerText = alphabet;
+
+    setBackgroundColorById(alphabet);
 }
 
 

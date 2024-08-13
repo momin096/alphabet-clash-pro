@@ -9,6 +9,17 @@ function ShowElementById(elementId){
     element.classList.remove('hidden');
 }
 
+function setBackgroundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.add('bg-[#FFA500]');
+    element.classList.add('text-black');
+}
+
+function removeBackgroundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-[#FFA500]');
+    element.classList.add('text-black');
+}
 
 function getARandomAlphabet(){
 
